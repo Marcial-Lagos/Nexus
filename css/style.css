@@ -1,9 +1,47 @@
-* {
+
+/*Config general*/
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*Variables de color*/
+:root {
+    --fondo: #0f0f13;
+    --panel: #18181b;
+    --panel-claro: #1f1f23;
 
+    --texto: #ffffff;
+    --texto-secundario: #adadb8;
+
+    --morado: #9147ff;
+    --celeste: #18d8e4;
+}
+/*Estilos generales*/
 body {
+
     font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto)
+}
+/*Información de login*/
+.login-info {
+    padding: 60px;
+    background-color: var(--fondo);
+}
+/*Formulario de login*/
+.login-formulario {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--panel);
+}
+/*Caja del login*/
+.login-caja {
+    width: 400px;
+    padding: 40px;
+    background-color: var(--panel-claro);
+    border-radius: 10px;
 }
