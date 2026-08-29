@@ -25,12 +25,12 @@ body {
     color: var(--texto)
 }
 /*Información de login*/
-.login-info {
+.login-promo {
     padding: 60px;
     background-color: var(--fondo);
 }
 /*Formulario de login*/
-.login-formulario {
+.panel-login {
     display: flex;
 
     justify-content: center;
@@ -39,7 +39,7 @@ body {
     background-color: var(--panel);
 }
 /*Caja del login*/
-.login-caja {
+.login-diseño {
     width: 400px;
     padding: 40px;
     background-color: var(--panel-claro);
