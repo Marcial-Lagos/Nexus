@@ -1,140 +1,655 @@
+/* 
+   CONFIGURACIÓN GENERAL
+*/
 
-/*Config general*/
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*Variables de color*/
+
+
+/* 
+   VARIABLES DE COLOR
+*/
+
 :root {
+
     --fondo: #0b0b10;
+
     --superficie: #121219;
+
     --superficie-2: #181821;
+
     --superficie-3: #20202b;
+
     --linea: #292936;
+
     --texto: #f5f5f8;
+
     --atenuado: #9c9cab;
+
     --morado: #7c5cff;
+
     --morado-2: #9b7dff;
+
     --verde: #39d98a;
+
     --peligro: #ff4773;
+
     --azul: #4e8cff;
+
     --naranja: #ff9c50;
+
     --radio: 16px;
+
     --sombra: 0 22px 70px rgba(0, 0, 0, .35);
 }
 
-/*Estilos generales*/
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; 
-    font-family: 'Inter', system-ui, sans-serif; 
-    background: var(--fondo); 
-    color: var(--texto); }
-a { color: inherit; 
-    text-decoration: none; }
-button, input, textarea { font: inherit; }
-button { cursor: pointer; }
-img { max-width: 100%; display: block; }
 
-/*Estilos de inicio de sesión*/
-.cuerpo-inicio-sesion { min-height: 100vh;
-                    background: #0a0a10; }
+/*
+   ESTILOS GENERALES
+*/
 
-/*Estilos de diseño de inicio de sesión*/
-.diseno-inicio-sesion { min-height: 100vh;
-                        display: grid;
-                        grid-template-columns: 1.18fr .82fr; }
+html {
+    scroll-behavior: smooth;
+}
 
-/*Estilos de promoción de inicio de sesión*/
-.promocion-inicio-sesion { position: relative;
-                           overflow: hidden;
-                           padding: 46px 58px;
-                           display: flex;
-                           flex-direction: column;
-                           justify-content: space-between; 
-background: radial-gradient(circle at 25% 35%, rgba(124,92,255,.35), transparent 34%), radial-gradient(circle at 80% 70%, rgba(87,57,255,.23), transparent 28%), #101018; }
 
-/*Estilos de pseudo-elementos de promoción de inicio de sesión*/
-    .promocion-inicio-sesion::before, .promocion-inicio-sesion::after { content: '';
-      position: absolute; width: 320px;
-      height: 320px;
-      border: 1px solid rgba(255,255,255,.08); 
-      border-radius: 38% 62% 57% 43%; 
-      transform: rotate(30deg); }
+body {
+    margin: 0;
 
-/*Estilos de pseudo-elemento ::before de promoción de inicio de sesión*/
-        .promocion-inicio-sesion::before { right: -80px; 
-                                   top: -100px; }
+    font-family: 'Inter', system-ui, sans-serif;
 
-/*Estilos de pseudo-elemento ::after de promoción de inicio de sesión*/
-          .promocion-inicio-sesion::after { left: 40%; 
-                                  bottom: -180px; 
-                                  width: 420px; 
-                                  height: 420px; }
+    background: var(--fondo);
 
-/*Estilos de texto de promoción de inicio de sesión*/
-.texto-promocion { position: relative; 
-                   z-index: 1; 
-                   max-width: 680px; }
+    color: var(--texto);
+}
 
-/*Estilos de título de texto de promoción de inicio de sesión*/
-    .texto-promocion h1 { margin: 16px 0; 
-                      font-size: clamp(44px, 5vw, 76px); 
-                      line-height: .98; 
-                      letter-spacing: -.055em; }
 
-/*Estilos de párrafo de texto de promoción de inicio de sesión*/
-    .texto-promocion p { max-width: 620px; 
-                     color: #c0c0cc; 
-                     font-size: 18px; 
-                     line-height: 1.7; }
+a {
+    color: inherit;
 
-/*Estilos de etiquetas de promoción de inicio de sesión*/
-.etiquetas-promocion { display: flex; 
-                       flex-wrap: wrap; 
-                       gap: 8px; 
-                       margin-top: 26px; }
+    text-decoration: none;
+}
 
-/*Estilos de span de etiquetas de promoción de inicio de sesión*/                       
-    .etiquetas-promocion span { padding: 8px 12px; 
-                                background: rgba(255,255,255,.06); 
-                                border: 1px solid rgba(255,255,255,.08); 
-                                border-radius: 999px; 
-                                color: #d9d9e2; 
-                                font-size: 12px; }
 
-/*Estilo de pie de inicio de sesión*/      
-.pie-inicio-sesion { color: #686879; font-size: 12px; }
+button,
+input,
+textarea {
+    font: inherit;
+}
 
-/*Estilos de panel de inicio de sesión*/
-.panel-inicio-sesion { display: grid; 
-                       place-items: center; 
-                       padding: 30px; 
-                       background: #0b0b10; }
 
-/*Estilos de tarjeta de inicio de sesión*/
-.tarjeta-inicio-sesion { width: min(430px, 100%); 
-                         padding: 36px; 
-                         border-radius: 22px; 
-                         background: #14141b; 
-                         border: 1px solid #24242e; 
-                         box-shadow: var(--sombra); 
-                        }
-/*Estilos de marca móvil de inicio de sesión*/
-.marca-movil { display: none; 
-               margin-bottom: 26px; 
-               align-items: center; 
-               gap: 8px; 
-               font-weight: 800; }         
+button {
+    cursor: pointer;
+}
 
-/*Estilos de indicador de estado*/               
-.indicador-estado { display: inline-block; 
-                    color: #70dfad; 
-                    background: rgba(57,217,138,.08); 
-                    border: 1px solid rgba(57,217,138,.18); 
-                    border-radius: 999px; 
-                    padding: 6px 9px; 
-                    font-size: 10px; 
-                    font-weight: 800; }
-               
+
+img {
+    max-width: 100%;
+
+    display: block;
+}
+
+
+/*
+   LOGO / MARCA NEXUS
+*/
+
+.marca {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Inter', sans-serif;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Tamaño de la marca */
+
+.marca-grande {
+    font-size: 19px;
+}
+
+
+/* Símbolo N */
+
+.simbolo-marca {
+    width: 36px;
+
+    height: 36px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #7c5cff,
+        #9b7dff
+    );
+
+    border: 1px solid rgba(255, 255, 255, .14);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 16px rgba(124, 92, 255, .35),
+        inset 0 1px 1px rgba(255, 255, 255, .18);
+}
+
+
+/*
+   INICIO DE SESIÓN
+*/
+
+.cuerpo-inicio-sesion {
+    min-height: 100vh;
+
+    background: #0a0a10;
+}
+
+
+/*
+   DISEÑO DEL INICIO DE SESIÓN
+*/
+
+.diseno-inicio-sesion {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1.18fr .82fr;
+}
+
+
+/*
+   PANEL PROMOCIONAL
+*/
+
+.promocion-inicio-sesion {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 46px 58px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 25% 35%,
+            rgba(124, 92, 255, .35),
+            transparent 34%
+        ),
+
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(87, 57, 255, .23),
+            transparent 28%
+        ),
+
+        #101018;
+}
+
+
+/*
+   FIGURAS DECORATIVAS DEL PANEL
+*/
+
+.promocion-inicio-sesion::before,
+.promocion-inicio-sesion::after {
+
+    content: '';
+
+    position: absolute;
+
+    width: 320px;
+
+    height: 320px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 38% 62% 57% 43%;
+
+    transform: rotate(30deg);
+}
+
+
+.promocion-inicio-sesion::before {
+    right: -80px;
+
+    top: -100px;
+}
+
+
+.promocion-inicio-sesion::after {
+    left: 40%;
+
+    bottom: -180px;
+
+    width: 420px;
+
+    height: 420px;
+}
+
+
+/*
+   TEXTO PROMOCIONAL
+*/
+
+.texto-promocion {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 680px;
+}
+
+
+/* Subtítulo */
+
+.subtitulo {
+    color: var(--morado-2);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* Título principal */
+
+.texto-promocion h1 {
+    margin: 16px 0;
+
+    font-size: clamp(44px, 5vw, 76px);
+
+    line-height: .98;
+
+    letter-spacing: -.055em;
+}
+
+
+/* Párrafo */
+
+.texto-promocion p {
+    max-width: 620px;
+
+    color: #c0c0cc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/*
+   ETIQUETAS PROMOCIONALES
+*/
+
+.etiquetas-promocion {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 26px;
+}
+
+
+.etiquetas-promocion span {
+    padding: 8px 12px;
+
+    background: rgba(255, 255, 255, .06);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 999px;
+
+    color: #d9d9e2;
+
+    font-size: 12px;
+}
+
+
+/*
+   PIE DE INICIO DE SESIÓN
+*/
+
+.pie-inicio-sesion {
+    position: relative;
+
+    z-index: 1;
+
+    color: #686879;
+
+    font-size: 12px;
+}
+
+
+/*
+   PANEL DERECHO
+*/
+
+.panel-inicio-sesion {
+    min-height: 100vh;
+
+    display: grid;
+
+    place-items: center;
+
+    padding: 30px;
+
+    background: #0b0b10;
+}
+
+
+/*
+   TARJETA DE INICIO DE SESIÓN
+*/
+
+.tarjeta-inicio-sesion {
+    width: min(430px, 100%);
+
+    padding: 36px;
+
+    border-radius: 22px;
+
+    background: #14141b;
+
+    border: 1px solid #24242e;
+
+    box-shadow: var(--sombra);
+}
+
+
+/*
+   MARCA PARA PANTALLAS PEQUEÑAS
+*/
+
+.marca-movil {
+    display: none;
+
+    margin-bottom: 26px;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-weight: 800;
+}
+
+
+/*
+   INDICADOR DE ESTADO
+*/
+
+.indicador-estado {
+    display: inline-block;
+
+    color: #70dfad;
+
+    background: rgba(57, 217, 138, .08);
+
+    border: 1px solid rgba(57, 217, 138, .18);
+
+    border-radius: 999px;
+
+    padding: 6px 9px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+/*
+   TÍTULO DE LA TARJETA
+*/
+
+.tarjeta-inicio-sesion h2 {
+    font-size: 30px;
+
+    margin: 18px 0 6px;
+
+    letter-spacing: -.035em;
+}
+
+
+/*
+   TEXTO DE LA TARJETA
+*/
+
+.tarjeta-inicio-sesion > p {
+    margin-top: 0;
+}
+
+
+/*
+   LABELS
+*/
+
+.tarjeta-inicio-sesion label {
+    display: block;
+
+    margin: 20px 0 8px;
+
+    color: #d8d8df;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/*
+   INPUTS
+*/
+
+.tarjeta-inicio-sesion input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #32323e;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #0d0d13;
+
+    color: white;
+
+    transition:
+        border .2s,
+        box-shadow .2s;
+}
+
+
+/* Input seleccionado */
+
+.tarjeta-inicio-sesion input:focus {
+    border-color: var(--morado);
+
+    box-shadow:
+        0 0 0 3px rgba(124, 92, 255, .13);
+}
+
+
+/*
+   FILA CONTRASEÑA
+*/
+
+.fila-etiqueta {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.fila-etiqueta a {
+    color: var(--morado-2);
+
+    font-size: 11px;
+}
+
+
+/*
+   BOTONES
+*/
+
+.boton {
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 13px 18px;
+
+    font-weight: 700;
+
+    transition:
+        transform .2s,
+        background .2s,
+        box-shadow .2s;
+}
+
+
+.boton:hover {
+    transform: translateY(-1px);
+}
+
+
+/* Botón principal */
+
+.boton-primario {
+    margin-top: 24px;
+
+    background: var(--morado);
+
+    color: white;
+
+    box-shadow:
+        0 8px 25px rgba(124, 92, 255, .25);
+}
+
+
+.boton-primario:hover {
+    background: var(--morado-2);
+}
+
+
+/* Botón secundario */
+
+.boton-secundario {
+    margin-top: 10px;
+
+    background: #20202b;
+
+    color: white;
+
+    border: 1px solid #32323e;
+}
+
+
+.boton-secundario:hover {
+    background: #292936;
+}
+
+
+/* Botón ocupa todo el ancho */
+
+.boton-bloque {
+    width: 100%;
+}
+
+
+/*
+   TEXTOS AUXILIARES
+*/
+
+.atenuado {
+    color: var(--atenuado);
+}
+
+
+.pequeno {
+    font-size: 12px;
+}
+
+
+.centrado {
+    text-align: center;
+}
+
+
+.tarjeta-inicio-sesion .centrado {
+    margin: 18px 0 0;
+}
+
+
+/*
+   DISEÑO RESPONSIVE
+*/
+
+@media (max-width: 850px) {
+
+    .diseno-inicio-sesion {
+        grid-template-columns: 1fr;
+    }
+
+
+    .promocion-inicio-sesion {
+        display: none;
+    }
+
+
+    .panel-inicio-sesion {
+        min-height: 100vh;
+    }
+
+
+    .marca-movil {
+        display: flex;
+    }
+
+}
