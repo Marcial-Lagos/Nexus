@@ -104,5 +104,37 @@ background: radial-gradient(circle at 25% 35%, rgba(124,92,255,.35), transparent
                                 color: #d9d9e2; 
                                 font-size: 12px; }
 
-/*Estilos de pie de inicio de sesión*/      
+/*Estilo de pie de inicio de sesión*/      
 .pie-inicio-sesion { color: #686879; font-size: 12px; }
+
+/*Estilos de panel de inicio de sesión*/
+.panel-inicio-sesion { display: grid; 
+                       place-items: center; 
+                       padding: 30px; 
+                       background: #0b0b10; }
+
+/*Estilos de tarjeta de inicio de sesión*/
+.tarjeta-inicio-sesion { width: min(430px, 100%); 
+                         padding: 36px; 
+                         border-radius: 22px; 
+                         background: #14141b; 
+                         border: 1px solid #24242e; 
+                         box-shadow: var(--sombra); 
+                        }
+/*Estilos de marca móvil de inicio de sesión*/
+.marca-movil { display: none; 
+               margin-bottom: 26px; 
+               align-items: center; 
+               gap: 8px; 
+               font-weight: 800; }         
+
+/*Estilos de indicador de estado*/               
+.indicador-estado { display: inline-block; 
+                    color: #70dfad; 
+                    background: rgba(57,217,138,.08); 
+                    border: 1px solid rgba(57,217,138,.18); 
+                    border-radius: 999px; 
+                    padding: 6px 9px; 
+                    font-size: 10px; 
+                    font-weight: 800; }
+               
