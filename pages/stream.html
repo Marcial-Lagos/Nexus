@@ -1,11 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Nexus | Stream</title>
-</head>
-<body>
-    
-</body>
+    <!-- Fuente principal del proyecto -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hoja de estilos principal -->
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body class="cuerpo-transmision">
+    <!-- Barra superior de navegación -->
+    <header class="barra-superior-simple">
+      <a class="marca" href="principal.html">
+        <span class="simbolo-marca mini"> N </span>
+        <strong> NEXUS </strong>
+      </a>
+      <nav>
+        <a href="principal.html"> Explorar </a>
+        <a href="comunidad.html"> Comunidades </a>
+      </nav>
+      <div class="contenedor-busqueda compacto">
+        ⌕
+        <input placeholder="Buscar" type="search" />
+      </div>
+      <a class="avatar avatar-verde" href="perfil.html"> LG </a>
+    </header>
+    <!-- Distribución de transmisión y chat -->
+    <main class="diseno-visualizacion">
+      <section class="columna-visualizacion">
+        <!-- Área simulada del video -->
+        <div class="escenario-video">
+          <div class="video-simulado">
+            <div class="ventana-codigo">
+              <div class="puntos-codigo">● ● ●</div>
+              <pre><span>&lt;section</span> class="hero"&gt;
+  &lt;h1&gt;Hola Nexus!&lt;/h1&gt;
+  &lt;p&gt;Creamos comunidad.&lt;/p&gt;
+<span>&lt;/section&gt;</span></pre>
+            </div>
+            <div class="tarjeta-camara">
+              <span class="avatar avatar-morado extra-grande"> LG </span>
+              <strong> lLGNDl </strong>
+              <small> LIVE </small>
+            </div>
+          </div>
+          <div class="controles-video">
+            <span> ▶ </span>
+            <span> 🔊 </span>
+            <span class="insignia-en-vivo pequeno"> EN VIVO </span>
+            <span class="expandir"> </span>
+            <span> ⚙ </span>
+            <span> ⛶ </span>
+          </div>
+        </div>
+        <!-- Información del creador y la transmisión -->
+        <div class="detalle-transmision">
+          <div class="fila-creador">
+            <span class="avatar avatar-morado grande"> LG </span>
+            <div>
+              <h1>Creando una web desde cero</h1>
+              <p>
+                <strong> lLGNDl </strong>
+                · Programación
+              </p>
+              <div>
+                <span class="etiqueta-categoria"> HTML </span>
+                <span class="etiqueta-categoria"> CSS </span>
+                <span class="etiqueta-categoria"> JavaScript </span>
+              </div>
+            </div>
+            <div class="acciones-transmision">
+              <button class="boton boton-primario" id="botonSeguir">
+                ♡ Seguir
+              </button>
+              <button class="boton boton-suave">↗ Compartir</button>
+            </div>
+          </div>
+          <div class="tarjeta-acerca">
+            <div>
+              <h2>Acerca de lLGNDl</h2>
+              <p>
+                Programación, proyectos universitarios y desarrollo web sin
+                complicarlo más de la cuenta.
+              </p>
+            </div>
+            <strong> 6.7K seguidores </strong>
+          </div>
+        </div>
+      </section>
+      <!-- Chat en vivo -->
+      <aside class="chat-transmision">
+        <header>
+          CHAT EN VIVO
+          <button>⋮</button>
+        </header>
+        <div class="lista-chat-en-vivo" id="listaChatEnVivo">
+          <p>
+            <strong class="nombre-morado"> CodeMaster: </strong>
+            quedó mucho mejor el menú
+          </p>
+          <p>
+            <strong class="nombre-azul"> Suzu: </strong>
+            ¿eso está hecho solo con CSS?
+          </p>
+          <p>
+            <strong class="nombre-naranja"> ArkDerr: </strong>
+            sí, se ve limpio
+          </p>
+          <p>
+            <strong class="nombre-verde"> Cristal_dev: </strong>
+            prueba el responsive ahora
+          </p>
+          <p>
+            <strong class="nombre-morado"> pixelcat: </strong>
+            jajaj el bug volvió
+          </p>
+        </div>
+        <!-- Formulario para enviar mensajes al chat -->
+        <form class="formulario-chat-en-vivo" id="formularioChatEnVivo">
+          <input id="entradaChatEnVivo" placeholder="Enviar un mensaje" />
+          <div>
+            <span> ☺ </span>
+            <button class="boton boton-primario" type="submit">Chat</button>
+          </div>
+        </form>
+      </aside>
+    </main>
+    <!-- Archivo JavaScript con las interacciones del prototipo -->
+    <script src="../js/app.js"></script>
+  </body>
 </html>

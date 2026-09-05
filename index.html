@@ -1,208 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Nexus | Inicio sesión</title>
 
     <!-- Conexión con Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Fuentes Inter y Orbitron -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700;800&display=swap"
-        rel="stylesheet"
-    >
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Archivo CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-
-<body class="cuerpo-inicio-sesion">
-
+  <body class="cuerpo-inicio-sesion">
     <main class="diseno-inicio-sesion">
+      <!-- Panel izquierdo -->
+      <section class="promocion-inicio-sesion">
+        <!-- Logo Nexus -->
+        <a class="marca marca-grande" href="index.html">
+          <span class="simbolo-marca"> N </span>
 
+          <span> NEXUS </span>
+        </a>
 
-        <!-- Panel izquierdo -->
-        <section class="promocion-inicio-sesion">
+        <!-- Texto promocional -->
+        <div class="texto-promocion">
+          <span class="subtitulo"> COMUNIDADES - STREAMS - AMIGOS </span>
 
-            <!-- Logo Nexus -->
-            <a class="marca marca-grande" href="index.html">
+          <h1>Tu lugar favorito para ver transmisiones, hablar y compartir.</h1>
 
-                <span class="simbolo-marca">
-                    N
-                </span>
+          <p>
+            Descubre transmisiones, comunidades y personas con tus mismos gustos
+            e intereses.
+          </p>
 
-                <span>
-                    NEXUS
-                </span>
+          <!-- Etiquetas -->
+          <div class="etiquetas-promocion">
+            <span>#gaming</span>
 
-            </a>
+            <span>#programación</span>
 
+            <span>#música</span>
 
-            <!-- Texto promocional -->
-            <div class="texto-promocion">
+            <span>#universidad</span>
+          </div>
+        </div>
 
-                <span class="subtitulo">
-                    COMUNIDADES - STREAMS - AMIGOS
-                </span>
+        <!-- Pie o footer -->
+        <p class="pie-inicio-sesion">
+          © 2026 NEXUS. Todos los derechos reservados.
+        </p>
+      </section>
 
+      <!-- Panel derecho -->
+      <section class="panel-inicio-sesion">
+        <form class="tarjeta-inicio-sesion" id="formularioInicioSesion">
+          <!-- Logo para versión móvil -->
+          <div class="marca-movil">
+            <span class="simbolo-marca"> N </span>
 
-                <h1>
-                    Tu lugar favorito para ver transmisiones,
-                    hablar y compartir.
-                </h1>
+            <span> NEXUS </span>
+          </div>
 
+          <!-- Indicador  -->
+          <span class="indicador-estado"> ● Comunidad online </span>
 
-                <p>
-                    Descubre transmisiones, comunidades
-                    y personas con tus mismos gustos e intereses.
-                </p>
+          <h2>Bienvenid@ a nuestra comunidad</h2>
 
+          <p class="atenuado">Inicia sesión para entrar a Nexus.</p>
 
-                <!-- Etiquetas -->
-                <div class="etiquetas-promocion">
+          <!-- Correo -->
+          <label for="correo"> Correo electrónico </label>
 
-                    <span>#gaming</span>
+          <input
+            id="correo"
+            type="email"
+            placeholder="nombre@correo.cl"
+            required
+          />
 
-                    <span>#programación</span>
+          <!-- Contraseña -->
+          <div class="fila-etiqueta">
+            <label for="contrasena"> Contraseña </label>
 
-                    <span>#música</span>
+            <a href="#"> ¿Olvidaste tu contraseña? </a>
+          </div>
 
-                    <span>#universidad</span>
+          <input
+            id="contrasena"
+            type="password"
+            placeholder="••••••••"
+            minlength="4"
+            required
+          />
 
-                </div>
+          <!-- Botón iniciar sesión -->
+          <button
+            class="boton boton-primario boton-bloque"
+            type="submit"
+            id="botonIniciarSesion"
+          >
+            Entrar a Nexus
+          </button>
 
-            </div>
+          <!-- Botón invitado -->
+          <button
+            class="boton boton-secundario boton-bloque"
+            type="button"
+            id="botonInvitado"
+          >
+            Entrar como invitado
+          </button>
 
-
-            <!-- Pie o footer -->
-            <p class="pie-inicio-sesion">
-                © 2026 NEXUS. Todos los derechos reservados. 
-            </p>
-
-        </section>
-
-
-
-        <!-- Panel derecho -->
-        <section class="panel-inicio-sesion">
-
-
-            <form
-                class="tarjeta-inicio-sesion"
-                id="formularioInicioSesion"
-            >
-
-
-                <!-- Logo para versión móvil -->
-                <div class="marca-movil">
-
-                    <span class="simbolo-marca">
-                        N
-                    </span>
-
-                    <span>
-                        NEXUS
-                    </span>
-
-                </div>
-
-
-                <!-- Indicador  -->
-                <span class="indicador-estado">
-                    ● Comunidad online
-                </span>
-
-
-                <h2>
-                    Bienvenid@ a nuestra comunidad
-                </h2>
-
-
-                <p class="atenuado">
-                    Inicia sesión para entrar a Nexus.
-                </p>
-
-
-                <!-- Correo -->
-                <label for="correo">
-                    Correo electrónico
-                </label>
-
-
-                <input
-                    id="correo"
-                    type="email"
-                    placeholder="nombre@correo.cl"
-                    required
-                >
-
-
-                <!-- Contraseña -->
-                <div class="fila-etiqueta">
-
-                    <label for="contrasena">
-                        Contraseña
-                    </label>
-
-
-                    <a href="#">
-                        ¿Olvidaste tu contraseña?
-                    </a>
-
-                </div>
-
-
-                <input
-                    id="contrasena"
-                    type="password"
-                    placeholder="••••••••"
-                    minlength="4"
-                    required
-                >
-
-
-                <!-- Botón iniciar sesión -->
-                <button
-                    class="boton boton-primario boton-bloque"
-                    type="submit"
-                    id="botonIniciarSesion"
-                >
-                    Entrar a Nexus
-                </button>
-
-
-                <!-- Botón invitado -->
-                <button
-                    class="boton boton-secundario boton-bloque"
-                    type="button"
-                    id="botonInvitado"
-                >
-                    Entrar como invitado
-                </button>
-
-
-                <p class="pequeno atenuado centrado">
-                    Prototipo no funcional
-                </p>
-
-            </form>
-
-        </section>
-
+          <p class="pequeno atenuado centrado">
+            PROXIMO BOTON DE REGISTRO EN LA PAGINA CON POPUP
+          </p>
+        </form>
+      </section>
     </main>
-
-
-    <!-- JavaScript -->
     <script src="js/app.js"></script>
-
-</body>
-
+  </body>
 </html>

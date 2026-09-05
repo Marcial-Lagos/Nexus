@@ -1,13 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Nexus | Perfil</title>
-</head>
-<body>
-    
-</body>
-    
-</body>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hoja de estilos principal -->
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="pagina-perfil">
+    <!-- Barra superior de navegación -->
+    <header class="barra-superior-simple">
+      <a class="marca" href="principal.html">
+        <span class="simbolo-marca mini"> N </span>
+        <strong> NEXUS </strong>
+      </a>
+      <nav>
+        <a href="principal.html"> Inicio </a>
+        <a href="comunidad.html"> Comunidades </a>
+        <a class="activo" href="perfil.html"> Perfil </a>
+      </nav>
+      <a class="boton boton-suave" href="../index.html"> Cerrar sesión </a>
+    </header>
+    <!-- Contenido principal del perfil -->
+    <main class="contenido-perfil">
+      <!-- Banner visual del perfil -->
+      <section class="banner-perfil">
+        <div class="forma-banner uno"></div>
+        <div class="forma-banner dos"></div>
+      </section>
+      <!-- Información principal del usuario -->
+      <section class="tarjeta-encabezado-perfil">
+        <div class="avatar-perfil-xl">
+          LG
+          <span> </span>
+        </div>
+        <div class="identidad-perfil">
+          <h1>lLGNDl</h1>
+          <p>@marcial · Miembro desde 2026</p>
+          <div class="estadisticas-perfil">
+            <span>
+              <strong> 67000 </strong>
+              seguidores
+            </span>
+            <span>
+              <strong> 46 </strong>
+              siguiendo
+            </span>
+            <span>
+              <strong> 3 </strong>
+              comunidades
+            </span>
+          </div>
+        </div>
+        <button class="boton boton-primario" id="botonEditarPerfil">
+          Editar perfil
+        </button>
+      </section>
+      <!-- Información y actividad del usuario -->
+      <div class="columnas-perfil">
+        <section class="tarjeta-panel">
+          <h2>Acerca de mí</h2>
+          <p id="biografiaPerfil">
+            Estudiante de ingenieria informatica en DUOCUC, fan de la
+            tecnología, los juegos y los proyectos que terminan funcionando
+            cinco minutos antes de la entrega.
+          </p>
+          <div class="fila-informacion">
+            <span> 📍 </span>
+            <div>
+              <small> Ubicación </small>
+              <strong> Chile </strong>
+            </div>
+          </div>
+          <div class="fila-informacion">
+            <span> 🎮 </span>
+            <div>
+              <small> Intereses </small>
+              <strong> Gaming · Programación · Música </strong>
+            </div>
+          </div>
+        </section>
+        <section class="tarjeta-panel panel-actividad">
+          <div class="titulo-seccion titulo-compacto">
+            <div>
+              <h2>Actividad reciente</h2>
+            </div>
+            <a href="#"> Ver todo </a>
+          </div>
+          <article class="elemento-actividad">
+            <span class="icono-actividad"> 💬 </span>
+            <div>
+              <strong> Escribiste en Gaming Chile </strong>
+              <p>“Estoy armando el stream de programación...”</p>
+              <small> Hace 20 minutos </small>
+            </div>
+          </article>
+          <article class="elemento-actividad">
+            <span class="icono-actividad"> ♥ </span>
+            <div>
+              <strong> Seguiste a KiraPlay </strong>
+              <p>Canal de Overwatch y contenido competitivo.</p>
+              <small> Ayer </small>
+            </div>
+          </article>
+          <article class="elemento-actividad">
+            <span class="icono-actividad"> 🎮 </span>
+            <div>
+              <strong> Te uniste a una comunidad </strong>
+              <p>Gaming Chile</p>
+              <small> Hace 3 días </small>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- Ventana para editar el perfil -->
+    <dialog class="dialogo-perfil" id="dialogoPerfil">
+      <form id="formularioEditarPerfil" method="dialog">
+        <div class="encabezado-dialogo">
+          <h2>Editar perfil</h2>
+          <button value="cancel">×</button>
+        </div>
+        <label>
+          Nombre
+          <input id="editarNombre" value="lLGNDl" />
+        </label>
+        <label>
+          Biografía
+          <textarea id="editarBiografia" rows="4">
+Estudiante, fan de la tecnología, los juegos y los proyectos que terminan funcionando cinco minutos antes de la entrega.</textarea
+          >
+        </label>
+        <div class="acciones-dialogo">
+          <button class="boton boton-suave" value="cancel">Cancelar</button>
+          <button
+            class="boton boton-primario"
+            id="botonGuardarPerfil"
+            value="default"
+          >
+            Guardar cambios
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <!-- Archivo JavaScript con las interacciones del prototipo -->
+    <script src="../js/app.js"></script>
+  </body>
 </html>

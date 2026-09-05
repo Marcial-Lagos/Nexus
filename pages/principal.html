@@ -1,11 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexus | Principal</title>
-</head>
-<body>
-    
-</body>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hoja de estilos principal -->
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="cuerpo-aplicacion">
+    <!-- Barra vertical de servidores -->
+    <aside class="barra-servidores">
+      <a class="logo-servidor" href="principal.html"> N </a>
+      <div class="linea-barra"></div>
+      <a class="icono-servidor activo" href="principal.html" title="Inicio">
+        ⌂
+      </a>
+      <a class="icono-servidor" href="comunidad.html" title="Gaming"> 🎮 </a>
+      <a class="icono-servidor" href="comunidad.html" title="Código"> ⌘ </a>
+      <a class="icono-servidor" href="comunidad.html" title="Música"> 𝄞 </a>
+      <button
+        class="icono-servidor agregar-servidor"
+        title="Agregar"
+        type="button"
+      >
+        ＋
+      </button>
+    </aside>
+    <!-- Navegación lateral principal -->
+    <aside class="navegacion-lateral">
+      <div class="marca-lateral">
+        <span class="simbolo-marca mini"> N </span>
+        <strong> NEXUS </strong>
+      </div>
+      <nav>
+        <a class="elemento-navegacion activo" href="principal.html">
+          <span> ⌂ </span>
+          Inicio
+        </a>
+        <a class="elemento-navegacion" href="#explorar">
+          <span> ⌕ </span>
+          Explorar
+        </a>
+        <a class="elemento-navegacion" href="comunidad.html">
+          <span> ☷ </span>
+          Comunidades
+        </a>
+        <a class="elemento-navegacion" href="perfil.html">
+          <span> ♙ </span>
+          Mi perfil
+        </a>
+      </nav>
+      <p class="encabezado-lateral">CANALES EN VIVO</p>
+      <a class="usuario-en-vivo" href="stream.html">
+        <span class="avatar avatar-morado"> LG </span>
+        <span>
+          <strong> lLGNDl </strong>
+          <small> Programación </small>
+        </span>
+        <b> ● 6767 </b>
+      </a>
+      <a class="usuario-en-vivo" href="stream.html">
+        <span class="avatar avatar-azul"> K </span>
+        <span>
+          <strong> KiraPlay </strong>
+          <small> Overwatch </small>
+        </span>
+        <b> ● 1.2K </b>
+      </a>
+      <a class="usuario-en-vivo" href="stream.html">
+        <span class="avatar avatar-naranja"> A </span>
+        <span>
+          <strong> AlexMusic </strong>
+          <small> Just Chatting </small>
+        </span>
+        <b> ● 727 </b>
+      </a>
+      <div class="perfil-mini">
+        <span class="avatar avatar-verde"> LG </span>
+        <span>
+          <strong> lLGNDl </strong>
+          <small> En línea </small>
+        </span>
+        <a href="../index.html" title="Cerrar sesión"> ↪ </a>
+      </div>
+    </aside>
+    <!-- Contenido principal de la aplicación -->
+    <main class="principal-aplicacion">
+      <!-- Barra superior con búsqueda y perfil -->
+      <header class="barra-superior">
+        <button aria-label="Abrir menú" class="menu-movil" id="menuMovil">
+          ☰
+        </button>
+        <div class="contenedor-busqueda">
+          ⌕
+          <input
+            id="busquedaTransmisiones"
+            placeholder="Buscar streams, categorías o personas"
+            type="search"
+          />
+        </div>
+        <div class="acciones-superiores">
+          <button class="boton-icono">♢</button>
+          <a class="avatar avatar-verde" href="perfil.html"> LG </a>
+        </div>
+      </header>
+      <div class="contenedor-contenido">
+        <!-- Transmisión destacada -->
+        <section class="destacado">
+          <div class="texto-destacado">
+            <span class="insignia-en-vivo"> ● EN VIVO </span>
+            <h1>
+              Aprende código
+              <br />
+              sin quedarte dormido.
+            </h1>
+            <p>
+              <strong> lLGNDl </strong>
+              está creando una web desde cero y respondiendo preguntas del chat.
+            </p>
+            <div class="acciones-destacado">
+              <a class="boton boton-primario" href="stream.html">
+                Ver transmisión
+              </a>
+              <a class="boton boton-suave" href="comunidad.html">
+                Entrar a la comunidad
+              </a>
+            </div>
+          </div>
+          <a
+            aria-label="Abrir transmisión destacada"
+            class="imagen-destacada"
+            href="stream.html"
+          >
+            <img
+              alt="Transmisión destacada de programación"
+              src="../img/img_carrusel_1.png"
+            />
+            <span class="contador-espectadores"> ● 6767 espectadores </span>
+          </a>
+        </section>
+        <!-- Canales recomendados y filtro de búsqueda -->
+        <section class="bloque-seccion" id="explorar">
+          <div class="titulo-seccion">
+            <div>
+              <span class="subtitulo"> PARA TI </span>
+              <h2>Canales recomendados</h2>
+            </div>
+            <a href="#"> Ver todos </a>
+          </div>
+          <div class="cuadricula-transmisiones" id="cuadriculaTransmisiones">
+            <article
+              class="tarjeta-transmision"
+              data-busqueda="programacion codigo marcial desarrollo web"
+            >
+              <a class="miniatura miniatura-codigo" href="stream.html">
+                <span class="insignia-en-vivo pequeno"> EN VIVO </span>
+                <span class="texto-miniatura-codigo"> &lt;/&gt; </span>
+                <small> 6767 espectadores </small>
+              </a>
+              <div class="informacion-transmision">
+                <span class="avatar avatar-morado"> LG </span>
+                <div>
+                  <h3>Creando una web desde cero</h3>
+                  <p>lLGNDl</p>
+                  <span class="etiqueta-categoria"> Programación </span>
+                </div>
+              </div>
+            </article>
+            <article
+              class="tarjeta-transmision"
+              data-busqueda="Overwatch gaming ranked kira esports"
+            >
+              <a class="miniatura miniatura-juego" href="stream.html">
+                <span class="insignia-en-vivo pequeno"> EN VIVO </span>
+                <span class="emoji-miniatura-grande"> 🎮 </span>
+                <small> 1.2K espectadores </small>
+              </a>
+              <div class="informacion-transmision">
+                <span class="avatar avatar-azul"> K </span>
+                <div>
+                  <h3>Ranked hasta llegar a Champions</h3>
+                  <p>KiraPlay</p>
+                  <span class="etiqueta-categoria"> Overwatch </span>
+                </div>
+              </div>
+            </article>
+            <article
+              class="tarjeta-transmision"
+              data-busqueda="musica charla alex guitar just chatting"
+            >
+              <a class="miniatura miniatura-musica" href="stream.html">
+                <span class="insignia-en-vivo pequeno"> EN VIVO </span>
+                <span class="emoji-miniatura-grande"> ♫ </span>
+                <small> 727 espectadores </small>
+              </a>
+              <div class="informacion-transmision">
+                <span class="avatar avatar-naranja"> A </span>
+                <div>
+                  <h3>Música y charla de domingo</h3>
+                  <p>AlexMusic</p>
+                  <span class="etiqueta-categoria"> Música </span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="busqueda-vacia" id="busquedaVacia">
+            No existen canales con esa búsqueda.
+          </p>
+        </section>
+        <section class="bloque-seccion">
+          <div class="titulo-seccion">
+            <div>
+              <span class="subtitulo"> DESCUBRE </span>
+              <h2>Categorías populares</h2>
+            </div>
+          </div>
+          <!-- Categorías populares -->
+          <div class="cuadricula-categorias">
+            <a class="tarjeta-categoria categoria-uno" href="comunidad.html">
+              <span> 🎮 </span>
+              <strong> Gaming </strong>
+              <small> 12.8K Conectados </small>
+            </a>
+            <a class="tarjeta-categoria categoria-dos" href="comunidad.html">
+              <span> ⌨ </span>
+              <strong> Programación </strong>
+              <small> 3.4K Conectados </small>
+            </a>
+            <a class="tarjeta-categoria categoria-tres" href="comunidad.html">
+              <span> ♫ </span>
+              <strong> Música </strong>
+              <small> 8.1K Conectados </small>
+            </a>
+            <a class="tarjeta-categoria categoria-cuatro" href="comunidad.html">
+              <span> ☕ </span>
+              <strong> Charlando </strong>
+              <small> 18.2K Conectados </small>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Archivo JavaScript con las interacciones del prototipo -->
+    <script src="../js/app.js"></script>
+  </body>
 </html>
